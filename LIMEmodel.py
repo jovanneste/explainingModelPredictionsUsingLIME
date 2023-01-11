@@ -14,7 +14,7 @@ from lime import lime_image
 # load model from keras
 model = inc_net.InceptionV3()
 
-img = image.load_img('rabbit.jpg', target_size=(299,299))
+img = image.load_img('images/elephant.jpg', target_size=(299,299))
 out=[]
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
